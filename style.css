@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display';
+    background-color:  hsl(225, 100%, 94%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 27%;
+    margin: 0px auto;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.image1 > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: gray;
+    font-weight: 300;
+}
+
+.last {
+    margin-bottom: 15px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    background-color:  hsl(227, 43%, 96%);
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+section {
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+section h4 {
+    margin-bottom: 5px;
+}
+
+.second a {
+    font-weight: bolder;
+    color: hsl(245, 75%, 52%);
+    margin-top: 10px;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: bolder;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.link {
+    font-weight: bolder;
+    color: hsla(224, 57%, 9%, 0.72);
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 320px;
+        margin: 0px auto;
+        margin-top: 15px;
+    }
+
+    .second, button {
+        width: 285px
+    }
+
+    .attribution {  
+        margin-top: 15px;
+    }
+}
